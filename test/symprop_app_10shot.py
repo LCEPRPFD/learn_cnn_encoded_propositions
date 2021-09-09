@@ -206,7 +206,7 @@ def predict_maml():
         logging.debug("prediction details: {}".format(_1_prob))
         prob = float(np.mean(_1_prob))
         logging.debug("prob: {}".format(prob))
-        # prob += 0.2
+        
         if prob >= 0.5:
             res = 1
         elif prob < 0.5:
